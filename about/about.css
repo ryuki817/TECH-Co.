@@ -381,10 +381,6 @@ nav .inner li a {
     display: flex;
   }
   
-  .footer a {
-    text-decoration: none;
-  }
-  
   .footer .fl {
     width: 80%;
     height: 100%;
@@ -437,7 +433,7 @@ nav .inner li a {
     border: 1px solid black;
   }
   
-  @media (min-width: 0) and (max-width: 390px) {
+  @media (min-width: 0) and (max-width: 500px) {
     * {
       margin: 0;
       padding: 0;

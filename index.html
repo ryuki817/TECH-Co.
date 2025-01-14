@@ -18,8 +18,9 @@
      <!-- css -->
      <link rel="stylesheet" href="css/reset.css" />
      <link rel="stylesheet" href="css/style.css" />
+     <script src="js/main.js" defer></script>
 </head>
-<body>
+<body class=".js_body">
     <header class="l_header">
         <h1 class="l_header-logo">
             <a href="" class="l_header-logo_link">
@@ -27,25 +28,35 @@
                 class="l_header-logo_img">
             </a>
         </h1>
-        <nav class="l_header-nav">
+        <nav class="l_header-nav js_navigation">
             <div class="l_header-nav_inner">
                 <ul class="l_header_list">
-                    <li class="l_header_item">TECH&Co.の特徴</li>
-                    <li class="l_header_item">カリキュラム</li>
-                    <li class="l_header_item">コース・料金</li>
+                    <li class="l_header_item">
+                        <a href="#feature">TECH&Co.の特徴</a></li>
+                    <li class="l_header_item">
+                        <a href="#currculum">カリキュラム</a></li>
+                    <li class="l_header_item">
+                        <a href="#course">コース・料金</a></li>
                     <!-- <li class="l_header_item">卒業生の実績</li> -->
-                    <li class="l_header_item">受講までの流れ</li>
-                    <li class="l_header_item">よくあるご質問</li>
+                    <li class="l_header_item">
+                        <a href="#flow">受講までの流れ</a></li>
+                    <li class="l_header_item">
+                        <a href="#faq">よくあるご質問</a></li>
                     <li class="l_header_item">
                         <a href="https://lin.ee/Te58zC1" class="l_header_line">公式ライン</a>
                     </li>
                 </ul>
             </div>
         </nav>
+        <button class="m_hamburger js_hamburger">
+            <span class="m_hamburger-bar"></span>
+            <span class="m_hamburger-bar"></span>
+            <span class="m_hamburger-bar"></span>
+          </button>
     </header>
     <!-- header -->
      <div class="top">
-        <div class="top-kv" style="height: 756px;">
+        <div class="top-kv">
             <div class="top-kv_wrap">
                 <div class="top-kv_contents">
                     <p class="top-kv_copy">
@@ -175,9 +186,9 @@
                 </div>
             </div>
         </section> -->
-        <section class="top-feature l_container m-deco-box">
+        <section class="top-feature l_container m-deco-box" id="feature">
             <div class="top-feature_deco-wrap m-deco-box">
-                <div class="u-wrap">
+                <div class="u-wrap top-margin">
                    <h2 class="top-feature_ttl m_top-ttl">
                     <span class="m-marker">
                         TECH&Co.の特徴
@@ -291,7 +302,7 @@
                 </div>
             </div>
         </section>
-        <section class="top-currculum u-ptb-l">
+        <section class="top-currculum u-ptb-l" id="currculum">
             <h2 class="top-currculum_ttl m_top-ttl">
                 <span class="m-marker">
                     Web制作の全工程をカバーした<br class="u-sp">
@@ -434,7 +445,7 @@
                     </div>
                 </div>
             </div>
-            <div class="top-course u-ptb-top">
+            <div class="top-course u-ptb-top" id="course">
                 <div class="u-wrap">
                     <h2 class="top-course_ttl m_top-ttl">
                         <span class="m-marker">
@@ -551,7 +562,7 @@
                 </div>
             </div>
         </section>
-        <section class="top-flow u-ptb-top u-wrap-sm">
+        <section class="top-flow u-ptb-top u-wrap-sm" id="flow">
             <h2 class="top-flow_ttl m_top-ttl">
                 <span class="m-marker">
                     学習の流れ
@@ -641,7 +652,7 @@
                 </div>
             </div>
         </section>
-        <section class="top-faq u-ptb-top">
+        <section class="top-faq u-ptb-top" id="faq">
             <div class="u-wrap-sm">
                 <h2 class="top-faq_ttl m_top-ttl">
                     <span class="m-marker">
@@ -778,22 +789,22 @@
                <nav class="l_footer_nav">
                 <ul class="l_footer_nav-list">
                     <li class="l_footer_nav-item">
-                        <p class="u-link">特徴</p>
+                        <a href="#feature" class="u-link">特徴</a>
                     </li>
                     <li class="l_footer_nav-item">
-                        <p class="u-link">カリキュラム</p>
+                        <a href="#currculum" class="u-link">カリキュラム</a>
                     </li>
                     <li class="l_footer_nav-item">
-                        <p class="u-link">コース・料金</p>
+                        <a href="#course" class="u-link">コース・料金</a>
                     </li>
                 </ul>
                 <ul class="l_footer_nav-list">
 
                     <li class="l_footer_nav-item">
-                        <p class="u-link">受講までの流れ</p>
+                        <a href="#flow" class="u-link">受講までの流れ</a>
                     </li>
                     <li class="l_footer_nav-item">
-                        <p class="u-link">よくあるご質問</p>
+                        <a href="#faq" class="u-link">よくあるご質問</a>
                     </li>
                 </ul>
                 <ul class="l_footer_nav-list">
@@ -817,7 +828,7 @@
             </div>
         </div>
         <small class="l_footer_copyright u-wrap-l">
-        Copyright 2024 TECH&Co<br>All Righta Reserved</small>
+        Copyright 2024 TECH&Co　All Righta Reserved</small>
      </footer>
 </body>
 </html>
